@@ -39,6 +39,7 @@ class PSCest
         $deployPage->startTestInstance();
     }
 
+
     function T6DeleteTestInstance(Step\Acceptance\PSLoginSteps $I, \Page\PSDeployPage $deployPage){
         $deployPage->goToDeployPage();
         $deployPage->goToInstancesPage();
