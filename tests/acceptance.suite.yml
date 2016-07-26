@@ -1,0 +1,107 @@
+class_name: AcceptanceTester
+modules:
+    enabled:
+        - WebDriver
+        - Helper\Acceptance
+
+
+    config:
+        WebDriver:
+            url: 'http://149.202.195.201:8113/'
+            restart: false
+            browser: chrome
+            window_size: 1980x1780
+            clear_cookies: false
+
+
+# --run in browserstack--
+
+            #host: 'hub.browserstack.com'
+            #port: 80
+
+
+# -- login in browserstack
+
+            capabilities:
+             browserstack.user: 'cadencewatch1'
+             browserstack.key: 'RG12s8tJvQ9p3pZuxWzf'
+             browserstack.debug: 'true'
+             unexpectedAlertBehaviour: 'accept'
+             pageLoadStrategy: 'eager'
+             resolution: 1920x1080
+             os: 'WINDOWS'
+             os_version: 7
+
+
+
+
+
+
+
+env:
+
+  DEV_8:
+
+  DEV_PROD:
+    modules:
+      config:
+        WebDriver:
+          url: 'https://www.denimio.com'
+
+  DEV_2:
+    modules:
+      config:
+        WebDriver:
+          url: 'http://staging:prospect@dev2.denimio.com'
+
+  DEV_3:
+    modules:
+      config:
+        WebDriver:
+          url: 'https://staging:prospect@dev3.denimio.com'
+
+  DEV_4:
+    modules:
+      config:
+        WebDriver:
+          url: 'http://staging:prospect@dev4.denimio.com'
+
+  DEV_5:
+    modules:
+      config:
+        WebDriver:
+          url: 'http://staging:prospect@dev5.denimio.com'
+
+  DEV_6:
+    modules:
+      config:
+        WebDriver:
+          url: 'http://staging:prospect@dev6.denimio.com'
+
+  DEV_7:
+    modules:
+      config:
+        WebDriver:
+          url: 'http://staging:prospect@dev7.denimio.com'
+
+  DEV_9:
+    modules:
+      config:
+        WebDriver:
+          url: 'http://staging:prospect@dev9.denimio.com'
+
+  DEV_PROW:
+    modules:
+      config:
+        WebDriver:
+          url: 'http://149.202.195.201:8150/'
+
+
+
+
+
+  BROWSER:
+      modules:
+        config:
+          WebDriver:
+            url: 'http://browserstack.com/automate'
