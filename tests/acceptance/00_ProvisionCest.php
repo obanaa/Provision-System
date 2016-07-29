@@ -1,10 +1,8 @@
 <?php
+use \Step\Acceptance;
 
 /**
- * Created by PhpStorm.
- * User: obana
- * Date: 19.07.16
- * Time: 17:15
+ * @group test
  */
 class PSCest
 {
